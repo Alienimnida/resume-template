@@ -6,7 +6,7 @@ interface HeaderProps {
     contactInfo: ContactInfo;
 }
 
-export const Header = ({ name, title, contactInfo }: HeaderProps) => (
+export const Header = ({ title, contactInfo }: HeaderProps) => (
     <div className="mb-8">
         <h2 className="text-2xl text-teal-400 font-semibold mb-2">{title}</h2>
         <div className="flex gap-4 text-gray-600 mb-4">

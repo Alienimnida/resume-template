@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, FileText } from 'lucide-react';
 
@@ -14,10 +15,13 @@ export default function LandingPage() {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-white rounded-lg overflow-hidden shadow-xl transition-transform hover:scale-105">
             <div className="aspect-[4/5] relative bg-gray-100 p-4">
-              <img
+              <Image
                 src="/template-1.png"
                 alt="Classic Template"
-                className="w-full h-full object-cover rounded border border-gray-200"
+                layout="responsive"
+                width={4}
+                height={5}
+                className="rounded border border-gray-200"
               />
             </div>
             <div className="p-6">
@@ -40,10 +44,13 @@ export default function LandingPage() {
 
           <div className="bg-white rounded-lg overflow-hidden shadow-xl transition-transform hover:scale-105">
             <div className="aspect-[4/5] relative bg-gray-100 p-4">
-              <img
+              <Image
                 src="/template-2.png"
-                alt="Modern Template"
-                className="w-full h-full object-cover rounded border border-gray-200"
+                alt="Classic Template"
+                layout="responsive"
+                width={4}
+                height={5}
+                className="rounded border border-gray-200"
               />
             </div>
             <div className="p-6">

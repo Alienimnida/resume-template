@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { ResumeData } from "@/types/resume2";
 import { AtSign, Link, MapPin, Phone } from "lucide-react";
 export const Header = ({ name, title, contact, imageUrl }: {
@@ -33,8 +34,13 @@ export const Header = ({ name, title, contact, imageUrl }: {
                     </div>
                 </div>
             </div>
-            <div className="h-24 w-24 rounded-full overflow-hidden border-2 border-white">
-                <img src={imageUrl} alt="Profile" className="w-full h-full object-cover" />
+            <div className="h-24 w-24 rounded-full overflow-hidden border-2 border-white relative">
+                <Image
+                    src={imageUrl}
+                    alt="Profile"
+                    layout="fill"
+                    objectFit="cover"
+                />
             </div>
         </div>
     );
