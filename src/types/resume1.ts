@@ -1,3 +1,20 @@
+export interface ResumeData {
+    name: string;
+    title: string;
+    contact: {
+        phone: string;
+        email: string;
+        linkedin: string;
+        location: string;
+    };
+    summary: string;
+    experiences: Experience[];
+    education: Education[];
+    Achievements: Achievement[];
+    Certification: Certification[];
+    passions: Passion[];
+    skills: string[][] | string[];
+}
 export interface Achievement {
     title: string;
     description: string;
@@ -41,7 +58,7 @@ export interface Passion {
 }
 
 export interface SkillsProps {
-    skills: string[][];
+    skills: string[];
 }
 
 export interface QuoteProps {

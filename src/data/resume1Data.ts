@@ -2,6 +2,7 @@ export const resumeData = {
     name: "JASON REED",
     title: "Vice President, Manufacturing | Strategic Leadership | Process Optimization",
     contactInfo: {
+        phone: "(123) 456-7890",
         email: "help@enhancv.com",
         linkedin: "linkedin.com/in/",
         location: "Seattle, WA"
