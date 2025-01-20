@@ -9,10 +9,14 @@ export const EducationSection = ({ education }: { education: Education[] }) => {
                     <h3 className="text-lg font-bold text-[#0C2340]">{edu.degree}</h3>
                     <p className="text-[#0C2340] font-semibold">{edu.school}</p>
                     <div className="flex gap-4 text-gray-600 text-sm">
-                        <CalendarDays size={16} />
-                        <span>{edu.duration}</span>
-                        <MapPin size={16} />
-                        <span>{edu.location}</span>
+                        <div className="flex items-center gap-2">
+                            <CalendarDays size={16} />
+                            <span>{edu.duration}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <MapPin size={16} />
+                            <span>{edu.location}</span>
+                        </div>
                     </div>
                 </div>
             ))}

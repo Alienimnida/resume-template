@@ -6,6 +6,7 @@ import { Summary } from '@/components/resume2/Summary';
 import { Skills } from '@/components/resume2/Skills';
 import { Courses } from '@/components/resume2/Courses';
 import { KeyAchievements } from '@/components/resume2/Achievements';
+import { Languages } from '@/components/resume2/Languages';
 import { resumeData } from '@/data/resume2Data';
 
 
@@ -30,6 +31,7 @@ export default function ResumePage() {
                     <KeyAchievements achievements={resumeData.keyAchievements} />
                     <Courses courses={resumeData.courses} />
                     <Passions passions={resumeData.passions} />
+                    <Languages languages={resumeData.languages} />
                 </div>
             </div>
         </main>

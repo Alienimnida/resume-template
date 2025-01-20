@@ -17,6 +17,7 @@ export interface ResumeData {
     courses: Course[];
     passions: Passion[];
     skills: string[];
+    languages: Language[];
 }
 
 export interface Experience {
@@ -49,4 +50,10 @@ export interface Passion {
     icon: LucideIcon;
     title: string;
     description: string;
+}
+
+export interface Language {
+    name: string;
+    level: string;
+    proficiency: number;
 }

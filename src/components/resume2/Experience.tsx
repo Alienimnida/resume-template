@@ -9,10 +9,14 @@ export const ExperienceSection = ({ experiences }: { experiences: Experience[] }
                     <h3 className="text-lg font-bold text-[#0C2340]">{exp.title}</h3>
                     <p className="text-[#0C2340] font-semibold">{exp.company}</p>
                     <div className="flex gap-4 text-gray-600 text-sm mb-2">
-                        <CalendarDays size={16} />
-                        <span>{exp.duration}</span>
-                        <MapPin size={16} />
-                        <span>{exp.location}</span>
+                        <div className="flex items-center gap-2">
+                            <CalendarDays size={16} />
+                            <span>{exp.duration}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <MapPin size={16} />
+                            <span>{exp.location}</span>
+                        </div>
                     </div>
                     <ul className="list-disc ml-5 space-y-2 text-gray-700">
                         {exp.responsibilities.map((resp, idx) => (

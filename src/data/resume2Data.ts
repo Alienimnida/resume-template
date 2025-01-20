@@ -114,5 +114,17 @@ export const resumeData: ResumeData = {
         "Client Retention Strategies",
         "CRM Systems",
         "Market Analysis"
+    ],
+    languages: [
+        {
+            name: "English",
+            level: "Native",
+            proficiency: 5
+        },
+        {
+            name: "Spanish",
+            level: "Advanced",
+            proficiency: 4
+        }
     ]
 };
