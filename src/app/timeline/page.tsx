@@ -8,7 +8,7 @@ import { AchievementSection } from '@/components/timeline/Achievements';
 import { headerInfo, summary, experiences, education, skills, keyAchievements } from '@/data/data';
 
 
-const Home = () => {
+const ResumePage = () => {
     return (
         <main className="max-w-5xl mx-auto bg-white shadow-lg">
             <Header
@@ -29,4 +29,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default ResumePage;
