@@ -1,15 +1,3 @@
-export interface ResumeData {
-    header: HeaderInfo;
-    experience: Experience[];
-    education: Education[];
-    skills: Skills[];
-    languages: Languages[];
-    projects: Project[];
-    certificates: Certificate[];
-    achievements: KeyAchievements[];
-    volunteerExperience: VolunteerExperience[];
-    awards: Awards[];
-}
 export type Link = {
     icon: "Github" | "Linkedin" | "Portfolio" | "Twitter" | "External";
     url: string;
