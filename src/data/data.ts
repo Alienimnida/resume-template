@@ -1,4 +1,4 @@
-import { Awards, Certificate, Education, Experience, HeaderInfo, KeyAchievements, Languages, Link, Project, Skills, VolunteerExperience } from '@/types/resume';
+import { Awards, Certificate, Education, Experience, HeaderInfo, KeyAchievements, Languages, Project, Skills, VolunteerExperience } from '@/types/resume';
 
 export const headerInfo: HeaderInfo = {
     name: "Maeve Delaney",
