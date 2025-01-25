@@ -42,7 +42,7 @@ export default function ResumePage() {
                     </div>
 
                     <ExperienceSection experiences={resumeData.experience} />
-                    <Skills skills={resumeData.skills} />
+                    <Skills skills={resumeData.skills.flat()} />
                     <EducationSection education={resumeData.education} />
                 </div>
             </div>

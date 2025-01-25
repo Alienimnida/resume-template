@@ -7,7 +7,7 @@ import { Skills } from '@/components/ivyLeague/Skills';
 import { Summary } from '@/components/ivyLeague/Summary';
 import { resumeData } from '@/data/resume1Data';
 
-export const ResumePage = () => {
+export default function ResumePage() {
     return (
         <div className="max-w-4xl mx-auto p-8 bg-white">
             <Header
@@ -24,5 +24,3 @@ export const ResumePage = () => {
         </div>
     );
 };
-
-export default ResumePage;

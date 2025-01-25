@@ -9,7 +9,7 @@ import { CertificateSection } from "@/components/contemporary/Certifications";
 import { SkillsSection } from "@/components/contemporary/Skills";
 import { LanguagesSection } from "@/components/contemporary/Language";
 
-const ResumePage = () => {
+export default function ResumePage() {
     return (
         <main className="max-w-5xl mx-auto bg-white shadow-lg p-6">
             <div className="flex flex-col md:flex-row gap-8">
@@ -36,5 +36,3 @@ const ResumePage = () => {
         </main>
     );
 };
-
-export default ResumePage;
