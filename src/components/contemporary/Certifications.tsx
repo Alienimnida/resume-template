@@ -1,4 +1,4 @@
-import { GraduationCap } from 'lucide-react'
+import { FileText } from 'lucide-react'
 import { Certificate } from '@/types/resume'
 
 export const CertificateSection = ({ certifications }: { certifications: Certificate[] }) => {
@@ -10,7 +10,7 @@ export const CertificateSection = ({ certifications }: { certifications: Certifi
                     rel="stylesheet"
                 />
                 <span className="bg-green-200 p-2 rounded-lg mr-2">
-                    <GraduationCap size={20} color="#185449" strokeWidth={3} />
+                    <FileText size={20} color="#185449" strokeWidth={3} />
                 </span>
                 CERTIFICATES
             </h2>

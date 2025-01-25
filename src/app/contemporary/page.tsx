@@ -1,11 +1,13 @@
 import { Header } from "@/components/contemporary/Header";
 import { Contacts } from "@/components/contemporary/Contacts";
 import { SummarySection } from "@/components/contemporary/Summary";
-import { headerInfo, summary, experiences, keyAchievements, education, certificates } from "@/data/data";
+import { headerInfo, summary, experiences, keyAchievements, education, certificates, skills, languages } from "@/data/data";
 import { ExperienceSection } from "@/components/contemporary/Experience";
 import { AchievementSection } from "@/components/contemporary/Achievements";
 import { EducationSection } from "@/components/contemporary/Education";
 import { CertificateSection } from "@/components/contemporary/Certifications";
+import { SkillsSection } from "@/components/contemporary/Skills";
+import { LanguagesSection } from "@/components/contemporary/Language";
 
 const ResumePage = () => {
     return (
@@ -20,6 +22,7 @@ const ResumePage = () => {
                     />
                     <AchievementSection achievements={keyAchievements} />
                     <CertificateSection certifications={certificates} />
+                    <SkillsSection skills={skills} />
                 </aside>
 
                 <section className="flex-1">
@@ -27,6 +30,7 @@ const ResumePage = () => {
                     <SummarySection text={summary} />
                     <ExperienceSection experiences={experiences} />
                     <EducationSection educations={education} />
+                    <LanguagesSection languages={languages} />
                 </section>
             </div>
         </main>
